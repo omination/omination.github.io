@@ -1,0 +1,193 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* 
+{
+	box-sizing:border-box
+}
+.slideshow-container 
+{
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.mySlides 
+{
+  display: none;
+}
+.prev, .next 
+{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 20px;
+  color: #fcd21d;
+  font-weight: bold;
+  font-size: 2em;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.prev
+{
+	left: 0;
+}
+.next 
+{
+  right: 0;
+}
+.prev:hover, .next:hover 
+{
+  background-color: rgba(0,0,0,0.8);
+}
+.text 
+{
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext 
+{
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.numbertext
+{
+	font-family: neuton-cursive;
+	font-size: 1em;
+	color: #fcd21d;
+}
+.dot 
+{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover 
+{
+  background-color: #606060;
+}
+.fade 
+{
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#text
+{
+    width: 70%;
+    background: rgba(255, 244, 97, .5);
+    border-radius: .5em;
+    margin-left: 15%;
+    -webkit-box-shadow: 0 0 12px 4px #606060;
+}
+#text h2
+{
+	padding-top: 1em;
+	color: #606060;
+	font-weight: 900;
+	font-family: neuton-cursive;
+	letter-spacing: .1em;
+	text-decoration: underline;
+}
+#text p
+{
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	padding-bottom: 1em;
+	padding-top: 0;
+	text-align: left;
+	
+}
+
+.focus-in-expand {
+	-webkit-animation: focus-in-expand 0.8s ease-in-out both;
+	        animation: focus-in-expand 0.8s ease-in-out both;
+}
+@-webkit-keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.numbertext:hover {
+	-webkit-animation: numbertext 0.6s both;
+	        animation: numbertext 0.6s both;
+}
+
+@-webkit-keyframes numbertext {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+@keyframes numbertext {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+	<link href="style/index.css" rel="stylesheet" type="text/css">
+	
+	<link rel="stylesheet" href="https://use.typekit.net/yjd7say.css">
+	<link href="style/about.css" rel="stylesheet" type="text/css">
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+	
+	
+</head>
+
+<body>
+	
+		<header id="navbar">
+		<nav><ul class=".scale-up-ver-top">
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="about.html" class="active">ABOUT</a></li>
+			<li><a href="menu.html">MENU</a></li>
+			<li><a href="orders.html">ORDERS</a></li>
+			<li><a href="contacts.html">CONTACTS</a></li>
+			</ul>
+			<span class="menuIcon" onClick="menuToggle();"></span>
+			
+		<div class="logo"><img src="images/rene_logo.png" width="100" height="100" alt=""/></div>
+		<div class="contacts">773.391.2683 | Renes@gmail.com</div></nav>
+			
+		</header>
+	
+	
+<div id="wrapper">
+	
+	<div class="top">
+		<p> Allow us to introduce ourselves</p>
+    	<img src="images/about/teamlogo.png" width="200" height="auto" alt=""/> 
+	</div>
+	
+	<div class="midpart">
+		<figure>
+			<img src="images/About1.jpg"></figure>
+		<div class="about">
+			<h3>About Rene's</h3>
+			<p>This bakery was created out of the belief that everyone should be able to enjoy quality pastries at a great price. No matter how your day went and how much of your day is left. One of our beautiful and delicious pastries is certain to make it fly by</p>
+			<p>We uphold our quality and costomer service over everthing. We are a small team but we make a big impression</p>
+		</div>
+	</div>
+	
+	<div class="team">
+		<h5> Our Team </h5>
+		<p> We are so certain we have the most incredible team a bakery could ask for.
+		<br> &nbsp;We have part time and full time employees and they all make the difference when it come to our product quality and customer serivce.</p>
+
+		
+		<div class="container">
+		<div class="box">
+			<div class="imgBx">
+		    	<img src="images/about/chef1.jpg" width="675" height="675" alt=""/> 
+			</div>
+			<div class="content">
+				<h3>Rene Trevino</h3>
+				<p>Our amazing head pastry chef. He is always here working hard to deliver his best work everyday.  Making wild creations is his hobby.</p>
+			</div>
+		</div>
+		
+		<div class="box">
+			<div class="imgBx">
+				<img src="images/about/chef2.jpg" width="675" height="675" alt=""/>
+			</div>
+			<div class="content">
+				<h3>Amelia Covarrubias</h3>
+				<p>Our wonderful assistant chef. Shes is always working on new ideas and giving free tasting to get feedback. We love her!</p>
+			</div>
+		</div>
+		
+		<div class="box">
+			<div class="imgBx">
+		    	<img src="images/about/person1.jpg" width="675" height="675" alt=""/>
+			</div>
+			<div class="content">
+				<h3>Jackie Lopez</h3>
+				<p>She is the most friendliest and kindest person. Shes in charge of taking orders on and offline. Shes been with us since the beginning!.</p>
+			</div>
+		</div>
+			
+		<div class="box">
+			<div class="imgBx">
+		    	<img src="images/about/person2.jpg" width="675" height="675" alt=""/>
+			</div>
+			<div class="content">
+				<h3>Chelsea Olea</h3>
+				<p>Our strong and reliable second pair of hands in the kitchen and works the counter. She makes our bakery feel like home.</p>
+			</div>
+		</div>
+		
+		<div class="box">
+			<div class="imgBx">
+				<img src="images/about/person3.jpg" width="675" height="675" alt=""/>
+			</div>
+			<div class="content">
+				<h3>Maggie + Liz</h3>
+				<p>An irreplaceble mother daughter duo. They help prepare and bake our pastries everyday. They’ve been with us since the beginnning!</p>
+			</div>
+		</div>
+		
+		<div class="box">
+			<div class="imgBx">
+		    	<img src="images/about/person4.jpg" width="675" height="675" alt=""/>
+			</div>
+			<div class="content">
+				<h3>Miguel Elias</h3>
+				<p>When things get tough, Miguel gets going! He is always punctual and reliable with deliveries and orders. He is amazing at multi-tasking!</p>
+			</div>
+		</div>
+	</div>
+		
+	</div>
+	
+</div>
+	
+	<footer>
+    <img src="images/facebook1.png" width="18" height="auto" alt=""/> 
+	<img src="images/instagram1.png" width="30" height="auto" alt=""/>
+		<h6> 773.391.2683 | Renes@gmail.com</h6>
+		<p>RenesBakeryInc &copy; 2020 Copyright. All rights Reserved. </p>
+	</footer>
+
+</body>
+	
+			<script type="text/javascript">
+			function menuToggle()
+		{
+			var nav = document.getElementById('navbar')
+			nav.classList.toggle('active')
+		}
+</script>
+	
+	<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active1", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active1";
+}
+</script>
+	
+</html>

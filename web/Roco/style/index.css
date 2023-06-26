@@ -1,0 +1,248 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#wrapper
+{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background: linear-gradient(#606060, #fcd21d 30%);
+	height: auto;
+}
+header 
+{
+	width: 100%;
+	height: auto;
+}
+header img
+{
+	width: 20em;
+	height: 10em;
+	margin-top: 1%;
+}
+header h4
+{
+    color: #606060;
+    font-family: neuton-cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5em;
+	letter-spacing: .1em;
+	margin-top: -1.4em;
+	margin-bottom: 0;
+}
+nav
+{
+	width: 100%;
+	background: #606060;
+}
+nav ul
+{
+	padding: .5em 0;
+}
+nav ul li 
+{
+	list-style: none;
+	display: inline-block;
+	font-family: neuton-cursive;
+	font-size: 1.5em;
+	color: #fcd21d;
+	margin: 0 2em;
+}
+nav ul li a 
+{
+	text-decoration: none;
+	color: #fcd21d;
+	font-weight: 100;
+}
+
+.cool-link:after
+{
+	content: '';
+	width: 0;
+	height: 3px;
+	background: #272104;
+	transition: width 0.3s;
+	display: block;
+}
+
+.cool-link:hover:after
+{
+	width:100%;
+	transition: width 0.3s;
+}
+footer
+{
+	width: 100%;
+	overflow: auto;
+}
+footer p
+{
+	font-family: neuton-cursive;
+	font-size: 1.2em;
+	float: left;
+	margin-left: 1em;
+	color: #606060;
+}
+#icons
+{
+	float: right;
+	padding: .6em 3em .6em 0;
+}
+#icons #sci li
+{
+	list-style: none;
+	display: inline-block;
+	transition: 0.5s ease-in-out;
+	padding: 0 .7em;
+}
+#icons #sci li:hover
+{
+	transform: translateY(-15px);
+}
+
+
+
+.logoup:hover{
+	-webkit-animation: logoup 1.5s ease-in-out infinite both;
+	        animation: logoup 1.5s ease-in-out infinite both;
+}
+@-webkit-keyframes logoup {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+@keyframes logoup {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+
+
+.navup{
+	-webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes navup {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes navup {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@media(max-width: 740px)
+{
+	nav ul li 
+	{
+		margin: 0 1em;
+	}
+	nav ul li a 
+	{
+		font-size: .9em;
+	}
+}
+@media(max-width: 520px)
+{
+	nav ul li 
+	{
+		margin: 0 .7em;
+	}
+	nav ul li a
+	{
+		font-size: .7em;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

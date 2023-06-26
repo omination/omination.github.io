@@ -1,0 +1,370 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#wrapper
+{
+	max-width: 1200px;
+	padding-top: 10em;
+}
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: 1em;
+/*  padding: .1em;*/
+  margin-top: -22px;
+  color: #fffff1;
+  font-weight: bold;
+  font-size: 4em;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: .3em 0 0 .3em;
+}
+.prev{
+	left: 0;
+	border-radius: 0 .3em .3em 0;
+}
+
+/*
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+*/
+
+.text  {
+	color: #4a507b;
+	padding-left: 4em;
+	position: absolute;
+	bottom: 70px;
+	width: 60%;
+	background-color: rgba(255, 205, 196, .7)
+}
+.text h2
+{
+    font-size: 3em;
+    font-weight: 700;
+    text-align: left;
+	padding: .2em 0;
+}
+.text p
+{
+	font-size: 1em;
+	text-align: left;
+	padding-bottom: 1em;
+}
+/*
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+*/
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #ffcdc4;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active1, .dot:hover {
+  background-color: #63504d;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.follow
+{
+	width: 100%;
+}
+.follow p
+{
+	display: inline;
+	margin-right: 2em;
+	font-size: 1.3em;
+}
+.follow img
+{
+	margin-left: 3em;
+}
+.midpart
+{
+	width: 100%;
+	background-color: #4a507b;
+	margin-top: 2em;
+	height: 35em;
+}
+.midpart figure
+{
+	float: left;
+	width: 35%;
+	padding-left: 4em;
+}
+.midpart figure img
+{
+	width: 100%;
+	padding: 5em 0;
+}
+.about
+{
+	width: 40%;
+/*	height: 10em;*/
+	padding-right: 10%;
+	float: right;
+	padding-top: 5%
+}
+.midpart h3
+{
+	font-size: 3em;
+	color: #fffff1;
+}
+.midpart p
+{
+	text-align: justify;
+	padding: .2em 0; 
+	color: #fffff1;
+	font-size: 1em;
+}
+.butpart
+{
+	width: 100%;
+	background-color: #ffcdc4; 
+}
+.butpart h2
+{
+	font-size: 3em;
+	color: #4a507b;
+	padding-top: 1em;
+}
+.butpart p
+{
+	font-size: 1.4em;
+	color: #4a507b;
+	width: 50%;
+	padding: 2em 0;
+}
+.icons
+{
+	column-count: 4;
+	padding: 0 2em;
+}
+.icons figure
+{
+	background-color: #FFFFF1;
+	height: 18em;
+	border-radius: .5em;
+}
+.icons figure img
+{
+	width: 40%;
+	padding-top: 1em
+}
+.icons figure p
+{
+	font-size: 1em;
+	color: #4a507b;
+	width: 100%;
+}
+
+
+
+@media (max-width: 780px){
+	
+	.text  
+	{
+		color: #4a507b;
+		padding-left: 4em;
+		position: absolute;
+		bottom: 20px;
+		width: 80%;
+	}
+	.text h2
+	{
+    	font-size: 2em;
+	}
+	.text p
+	{
+		font-size: 1em;
+	}
+	.follow p
+	{
+		margin-right: 2em;
+		font-size: 1em;
+	}
+	
+	.midpart
+	{
+		
+	}
+	.midpart h3
+	{
+		font-size: 2.5em;
+	}
+	.midpart p
+	{
+		font-size: .9em;
+	}
+	.butpart p
+	{
+		font-size: 1em;
+		width: 80%;
+		padding: .5em 0 2em;
+	}
+	.icons
+	{
+		column-count: 2;
+	}
+	.icons figure
+	{
+		margin-bottom: 2em;
+		border-radius: .5em;
+	}
+	.icons figure p
+	{
+		width: 80%;
+		padding: 0;
+	}
+
+}
+
+@media (max-width: 480px){
+	#wrapper
+	{
+		padding-top: 7em;
+	}
+	.dot
+	{
+		display: none
+	}
+	.text  
+	{
+		color: #4a507b;
+		padding: 0 5%;
+		position: absolute;
+		bottom: -7.5em;
+		width: 90%;
+	}
+	.text h2
+	{
+    	font-size: 2em;
+	}
+	.text p
+	{
+		font-size: 1em;
+	}
+	.follow
+	{
+		margin-top: 7em;
+		display: block
+	}
+	.follow p
+	{
+/*		margin-right: 2em;*/
+		font-size: 1em;
+		display: block;
+	}
+	.follow img
+	{
+		margin: .5em 0.5em 0;
+	}
+	
+	.midpart
+	{
+		clear: both;
+		height: 40em;
+	}
+	.midpart figure
+	{
+		width: 70%;
+		margin: 0;
+		clear: both;
+			
+	}
+	.about
+	{
+		clear: both;
+		width: 100%;
+		margin: -8em 0;
+		padding: 0;
+		display: inline-block;
+
+	}
+	
+	.midpart h3
+	{
+		font-size: 2.5em;
+		margin: 0;
+		padding: 0 0 .5em;
+	}
+	.midpart p
+	{
+		font-size: .9em;
+		padding: .5em 1em;
+	}
+	.butpart p
+	{
+		font-size: 1em;
+		width: 80%;
+		padding: .5em 0 2em;
+	}
+	.icons
+	{
+		column-count: 2;
+	}
+	.icons figure
+	{
+		margin-bottom: 2em;
+		border-radius: .5em;
+		height: 15em;
+	}
+	.icons figure p
+	{
+		width: 80%;
+		padding: 2em 0 0;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

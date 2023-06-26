@@ -1,0 +1,258 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#wrapper
+{
+	max-width: 1200px;
+	padding-top: 7.5em;
+}
+.top
+{
+	background-color: #4a507b;
+	width: 100%;
+}
+.top h3
+{
+	color: #ffcdc4;
+	font-size: 2em;
+	padding: 1em 0 0;
+}
+.top p
+{
+	color: #ffcdc4;
+	font-size: 1.3em;
+}
+.midpart
+{
+	width: 100%;
+	background-color: #ffcdc4;
+	padding: 3em 0;
+	height: 42em;
+}
+
+.midpart h2
+{
+	text-align: left;
+	margin-left: 3.2em;
+	color: #fffff1;
+	font-weight: 900;
+}
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+	  text-align: left;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: #4a507b;
+  padding: 20px;
+	width: 40%;
+	float: left;
+	margin: 3em 0 5em 5em;
+}
+
+.col-25 {
+  float: left;
+  width: 100%;
+/*  margin-top: ;*/
+	color: #ffcdc4;
+	font-weight: 700;
+	text-align: left;
+}
+
+.col-75 {
+  float: left;
+  width: 100%;
+/*  margin-top: 6px;*/
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.location
+{
+	float: right;
+/*	margin: 6em 10em 6em 0;*/
+	width: 40%;
+	margin-top: 5em
+}
+.hours
+{
+	margin-top: 6em;
+}
+.location p
+{
+	color: #fffff1;
+	font-size: 1.4em;
+	font-weight: 700;
+	text-align: left;
+}
+.location h5
+{
+	color: #4a507b;
+	font-weight: 700;
+	font-size: 1.3em;
+	text-align: left;
+}
+.hours h5
+{
+	font-size: 1em;
+	text-align: left;
+}
+
+.mapouter
+{
+	width: 100%;
+}
+
+@media (max-width: 780px){
+	.top
+	{
+		background-color: #4a507b;
+		width: 100%;
+	}
+	.top h3
+	{
+		color: #ffcdc4;
+		font-size: 2em;
+		padding: 1em 0 0;
+	}
+	.top p
+	{
+		color: #ffcdc4;
+		font-size: 1.3em;
+	}
+	.top img
+	{
+		width: 20%
+	}
+	.midpart
+	{
+		width: 100%;
+		background-color: #ffcdc4;
+		padding: 3em 0;
+		height: 42em;
+	}
+
+	.midpart h2
+	{
+		text-align: left;
+		margin-left: 1em;
+		color: #fffff1;
+		font-weight: 900;
+	}
+	.container {
+	  border-radius: 5px;
+	  background-color: #4a507b;
+	  padding: 20px;
+		width: 40%;
+		float: left;
+		margin: 1em 0 5em 2em;
+	}
+
+	.col-25 {
+	/*  margin-top: ;*/
+		color: #ffcdc4;
+		font-weight: 700;
+		text-align: left;
+	}
+
+	.col-75 {
+	  float: left;
+	  width: 100%;
+	/*  margin-top: 6px;*/
+	}
+
+	.row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+}
+@media (max-width: 480px){
+	.midpart
+	{
+		height: 60em;
+	}
+	.container
+	{
+		width: 70%
+	}
+	.location
+	{
+		width: 90%;
+		margin: 0;
+		clear: both;
+	}
+	.hours
+	{
+		margin: 1em 0;
+		clear: both;
+	}
+	.location p
+	{
+		color: #fffff1;
+		font-size: 1em;
+		font-weight: 700;
+		text-align: left;
+
+	}
+	.location h5
+	{
+		color: #4a507b;
+		font-weight: 700;
+		font-size: 1.3em;
+		text-align: left;
+		padding: .5em 0;
+	}
+	.hours h5
+	{
+		font-size: 1em;
+		text-align: left;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,148 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* 
+{
+	box-sizing:border-box
+}
+#wrapper{
+	max-width: 1024px;
+}
+section ul
+{
+	list-style: none;
+	margin-top: 4em;
+}
+.accordion-control
+{
+    width: 60%;
+/*    text-align: center;*/
+    margin-left: 20%;
+	margin-top: 1em;
+	color: white;
+/*	background: linear-gradient(45deg,#3503ad,#f7308c);*/
+	background: rgba(175, 175, 175, .3);
+	padding: 1em 0;
+}
+.accordion-control h2
+{
+    letter-spacing: .1em;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-size: 2em;
+    text-align: left;
+    display: inline;
+    float: left;
+    padding: .3em 1em;
+    text-shadow: 1px 1px 3px #0077a0;
+}
+.accordion-control a
+{
+	float: right;
+	padding-right: 1.5em;
+	font-size: 2em;
+	color: #000;
+	
+}
+.accordion-control:hover
+{
+    transform: translateY(-10px);
+    transition: 0.5s ease-in-out;
+    filter: invert(0.30);
+}
+.accordion-panel
+{
+	display: none;
+	width: 60%;
+	margin-top: 1em;
+}
+.accordion-panels
+{
+	display: none;
+	width: 60%;
+	margin-top: 1em;
+}
+.accordion-panel img
+{
+	float: left;
+	width: 30%;
+	height: auto;
+}
+.accordion-panels img 
+{
+	float: right;
+	width: 30%;
+	height: auto;
+}
+.accordion-panel p
+{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-size: 1em;
+	color: white;
+	font-weight: thin;
+	text-align: justify;
+	padding: 1em 0 0 15em;
+}
+.accordion-panels p
+{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-size: 1em;
+	color: white;
+	font-weight: thin;
+	text-align: justify;
+	padding: 1em 15em 0 0em;
+}
+
+@media (max-width: 768px)
+{
+	.accordion-control h2
+	{
+    letter-spacing: .1em;
+    font-size: 1.8em;
+	}
+	figure
+	{
+		width: 100%;
+		display: inline-block;
+	}
+	.accordion-panel img
+	{
+	width: 60%;
+	height: auto;
+	margin-left: 20%;
+	}
+	.accordion-panel p
+	{
+		font-size: 1em;
+		width: 60%;
+		padding: 1.5em 0;
+	}
+		.accordion-panels img 
+	{
+	width: 60%;
+	height: auto;
+	margin-right: 20%;
+	}
+	.accordion-panels p
+	{
+		font-size: 1em;
+		width: 60%;
+		padding: 1.5em 0;
+	}
+}
+
+@media (max-width: 500px)
+{
+	.accordion-control h2
+	{
+		font-size: 1.4em;
+	}
+}
+
+
+
+
+
+
+
+
+

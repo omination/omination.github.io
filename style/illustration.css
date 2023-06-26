@@ -1,0 +1,328 @@
+@charset "utf-8";
+@import url("../webfonts/Neon/stylesheet.css");
+
+/* CSS Document */
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Neon;
+	cursor: url("../images/mouse.png"), pointer;
+}
+body
+{
+	max-width: 1200px;
+	box-sizing: border-box;
+	
+}
+#wrapper::before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 120px;
+	height: 500%;
+	background: #3184BC;
+	z-index: -2;
+}
+nav
+{
+	width: 100%;
+	display: inline-block;
+}
+nav img
+{
+	display: inline;
+	margin: 1em 1em 0;
+}
+
+header ul 
+{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: #3184BC;
+	z-index: 1;
+	padding: 100px 0;
+}
+header.active ul
+{
+	display: initial;
+}
+header ul li
+{
+	padding: 3em 0 0 4em;
+	text-align: center;
+}
+header ul li a
+{
+	color: white; 
+	font-size: 3em;
+	text-decoration: none;
+	position: relative;
+	padding: .5em;
+	font-weight: 700;
+}
+header ul li a::before
+{
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	transform: translate(-50%,-50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 5em;
+	color: rgba(0,0,0,0.1);
+	border-radius: 50%;
+	z-index:-1;
+	opacity: 0;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 500px;
+	transition: letter-spacing 0.5s,left 0.5s;
+}
+header ul li a:hover::before
+{
+	content: attr(data-text);
+	opacity: 1;
+	left: 50%;
+	letter-spacing: 10px;
+	width: 1800px;
+	height: 1800px;
+}
+header ul li a:hover
+{
+	color: #3184BC;
+	/*background: #ff0;*/
+	background: #fff;
+	border-radius: 5em;
+}
+.navigation ul li:nth-child(6n+1) a:before
+{
+	background: #81ecec;
+}
+.navigation ul li:nth-child(6n+2) a:before
+{
+	background: #ff7675;
+}
+.navigation ul li:nth-child(6n+3) a:before
+{
+	background: #55efc4;
+}
+.navigation ul li:nth-child(6n+4) a:before
+{
+	background: #ffeb3b;
+}
+.navigation ul li:nth-child(6n+5) a:before
+{
+	background: #03a9f4;	
+}
+.menuIcon
+{
+	display: initial;
+	position: fixed;
+	right: 2em;
+	top: 1em;
+	cursor: pointer;
+	padding: 8px;
+	z-index: 10;
+	background: url("../images/button.png");
+	width: 3em;
+	height: 3em;
+	background-repeat: no-repeat;
+	background-position: 6px;
+}
+header.active .menuIcon
+{
+	background:url("../images/x.png");
+	background-repeat: no-repeat;
+	background-position: 6px;
+}
+.text p {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	font-size: 6em;
+	font-weight: 900;
+	latter-spacing: 4px;
+	overflow: hidden;
+	background: linear-gradient(90deg, #3184BC, #fff, #3184BC, #000);
+	background-repeat: no-repeat;
+	background-size: 80%;
+	animation: animate 5s linear infinite;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: rgba(255,255,255,.01);
+}
+
+@keyframes animate
+{
+	0%
+	{
+		background-position: -500%;
+	}
+	100%
+	{
+		background-position: 500%;
+	}
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column1
+{
+	width: 100%;
+	align-items: center;
+	text-align: center;
+	margin-top: 2em;
+
+}
+.column1 img
+{
+	width: 60%;
+}
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal, .modal1, .modal2 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content, .modal-content1, .modal-content2 {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 70%;
+  max-width: 1000px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  font-size: 4em;
+  font-weight: bold;
+	z-index: 10;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides, .mySlides1 {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color:  #3184BC;
+  font-weight: bold;
+  font-size: 3em;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color:  #3184BC;
+  font-size: 1.5em;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media (max-width:600px){
+	.text p {
+		font-size: 4em;
+		font-weight: 500;
+	}
+}
+

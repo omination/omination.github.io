@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title> Smoky </title>
+	
+<link href="style/index.css" rel="stylesheet" type="text/css">
+<link href="style/product.css" rel="stylesheet" type="text/css">
+
+<meta name="viewport" content="initial-scale=1.0,width=device-width"/>		
+	
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+<script src="http://use.edgefonts.net/arizonia:n4:default;bad-script:n4:default.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+	<div id="wrapper">
+		<header id="navbar">
+			<nav>
+				<div id="logo">
+				<h1> Smoky </h1>
+				<span>HOOKAH GUIDE</span>
+			</div>
+			<ul>
+				<div class="tracking-in-expand-fwd">
+	<li><a href="index.html">HOME</a></li>
+	<li><a href="history.html">HISTORY</a></li>
+	<li><a href="steps.html">STEPS</a></li>
+	<li><a href="product.html" class="active">PRODUCT</a></li>
+	<li><a href="accessories.html">ACCESSORIES</a></li>
+					</div>
+			</ul></nav>
+			<span class="menuIcon" onClick="menuToggle();"></span>
+		</header>
+		
+<div class="content">
+	<div class="texts" id="slideshowtext">
+		<div class="active1">
+		  <h2>EGYPTIAN HOOKAHS</h2>
+	      <p>  Are classically styled hookah pipes which are handmade in Egypt. Each hookah features a metal stem, a glass base, and a clay bowl.  Traditional Egyptian hookahs are prized for their excellent performance and unique hand made details.</p>
+			<a href="https://www.hookahcompany.com/egyptian_hookahs_1_ctg.htm" target="_blank">Explore More</a>
+		</div>
+		
+		<div>
+			<h2>MODERN HOOKAHS</h2>
+		    <p> Pipes feature non traditional styling and designs and are generally easier to set up and maintain than a traditional handmade egyptian hookah. If you are looking for a unique base or stem design, Modern Hookahs are just the thing for you.</p>
+			<a href="https://www.hookahcompany.com/modern_hookahs_5_ctg.htm" target="_blank" >Explore More</a>
+		</div>
+		
+	  	<div>
+			<h2> AL FAKHER SHISHA </h2>
+		    <p> Is one of the most well-known shisha brands in all the world. They have been producing shisha tobacco since 1999, and rumor has it that their influence on the hookah universe far extends that reach.</p>
+			<a href="https://www.hookahcompany.com/al_fakher_shisha_9_ctg.htm" target="_blank">Explore More</a>
+		</div>
+		
+	    <div>
+			<h2>HOOKAH CHARCOAL</h2>
+		    <p> Quick light hookah charcoals are quick, convenient and easy to use. These coals are infused with quick-lighting compounds, making it easier for you to use your hookah pipe on the go, as they can be lit with a small lighter.</p>
+			<a href="https://www.hookahcompany.com/natural_charcoal_94_ctg.htm" target="_blank">Explore More</a>
+		</div>
+	</div>	
+
+<div class="bannerImg" id="slideshow">
+	<img src="images/product1.png" width="100%" class="active1">
+	<img src="images/product2.png" width="100%" alt=""/> 
+	<img src="images/product3.png" width="100%" alt=""/>
+	<img src="images/product4.png" width="100%" alt=""/>
+ 
+  <a class="prev" onclick="prevSlide(); prevSlidetext()">&#10094;</a>
+  <a class="next" onclick="nextSlide(); nextSlidetext()">&#10095;</a>
+</div>
+<br>
+	  </div>
+		
+
+		<div id="bg">
+<!--			<h5> HOOKAH </h5>-->
+		</div>
+		
+
+		
+		<footer>
+				<h4>&copy; 2019 Smoky</h4>
+			<div id="icons">
+				<ul id="sci">
+					<li><a href="#"><img src="images/icon.png"></a></li>
+					<li><a href="#"><img src="images/twitter-sign.png"></a></li>
+					<li><a href="#"><img src="images/instagram.png"></a>
+					</li>
+				</ul>
+			</div>
+		</footer>	
+	</div>
+	<script type="text/javascript">
+		var slideshow = document.getElementById('slideshow');
+		var slides = slideshow.getElementsByTagName('img');
+		var index = 0;
+		
+		function nextSlide()
+		{
+			slides[index].classList.remove('active1');
+			index = (index + 1) % slides.length;
+			slides[index].classList.add('active1');
+		}
+		function prevSlide()
+		{
+			slides[index].classList.remove('active1');
+			index = (index - 1 + slides.length) % slides.length;
+			slides[index].classList.add('active1');
+		}
+		
+		var slideshowtext = document.getElementById('slideshowtext');
+		var slidestext = slideshowtext.getElementsByTagName('div');
+		var i = 0;
+		
+		function nextSlidetext()
+		{
+			slidestext[i].classList.remove('active1');
+			i = (i + 1) % slidestext.length;
+			slidestext[i].classList.add('active1');
+		}
+		function prevSlidetext()
+		{
+			slidestext[i].classList.remove('active1');
+			i = (i - 1 + slidestext.length) % slidestext.length;
+			slidestext[i].classList.add('active1');
+		}
+		function menuToggle()
+		{
+			var nav = document.getElementById('navbar')
+			nav.classList.toggle('active1')
+		}
+	
+	</script>
+	<script type="text/javascript">
+			function menuToggle()
+		{
+			var nav = document.getElementById('navbar')
+			nav.classList.toggle('active')
+		}
+	
+</script>
+	
+	
+</body>
+</html>

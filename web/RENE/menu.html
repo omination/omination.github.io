@@ -1,0 +1,373 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+	<link href="style/index.css" rel="stylesheet" type="text/css">
+	
+	<link rel="stylesheet" href="https://use.typekit.net/yjd7say.css">
+	<link href="style/menu.css" rel="stylesheet" type="text/css">
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+	<script src="style/menu.js"></script>
+	
+</head>
+
+<body>
+	
+		<header id="navbar">
+		<nav><ul class=".scale-up-ver-top">
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="about.html">ABOUT</a></li>
+			<li><a href="menu.html"  class="active">MENU</a></li>
+			<li><a href="orders.html">ORDERS</a></li>
+			<li><a href="contacts.html">CONTACTS</a></li>
+			</ul>
+			<span class="menuIcon" onClick="menuToggle();"></span>
+			
+		<div class="logo"><img src="images/rene_logo.png" width="100" height="100" alt=""/></div>
+		<div class="contacts">773.391.2683 | Renes@gmail.com</div></nav>
+			
+		</header>
+	
+	
+<div id="wrapper">
+	
+<div class="top">
+  <h3>MENU</h3>
+	  <p> What you've been looking for</p>
+		<img src="images/Menu/pink_pastry.png" width="200" height="auto" alt=""/> 
+	</div>
+	
+	<div class="midpart">
+		
+		<p>More items in store!<br> All items can be used for Pastry Baskets and be made custom to <br> order for any event. </p>
+		
+	
+		<h2>DONUTS</h2>
+		<p>Our variety of signature donuts are sure to please any crowd of sweet tooths. Our signature donuts are available for Corporate Baskets and Catering. They can be made custom to fit any theme and be delivered day of the event!</p>
+		
+	<div class="row">
+  <div class="column">
+    <img src="images/Menu/donuts1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="images/Menu/donuts2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="images/Menu/donuts3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/Menu/donuts1.jpg" width="60%"> </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/Menu/donuts2.jpg" width="60%"> </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/Menu/donuts3.jpg" width="60%"> </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+</div>	
+		
+		<h2>MEXICAN PASTRIES</h2>
+		<p>We carry a variety of Mexican pastries made daily and available for special order. Great for your morning coffee or that afternoon meeting. Conchas, Gusanos, Borrachos, and Empanadas are available for custom themes.</p>
+		
+		<div class="row">
+  <div class="column">
+	  <img src="images/Menu/mexican1.jpg" onclick="openModal1();currentSlide1(1)" class="hover-shadow"> 
+			</div>
+  <div class="column">
+    <img src="images/Menu/mexican2.jpg" onclick="openModal1();currentSlide1(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="images/Menu/mexican3.jpg"
+		 onclick="openModal1();currentSlide1(3)" class="hover-shadow">
+  </div>
+
+</div>
+
+
+<div id="myModal1" class="modal">
+  <span class="close cursor" onclick="closeModal1()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides1">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/Menu/mexican1.jpg" width="60%"> </div>
+
+    <div class="mySlides1">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/Menu/mexican2.jpg" width="60%"> </div>
+
+    <div class="mySlides1">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/Menu/mexican3.jpg" width="60%"> </div>
+
+    <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+
+
+	
+  </div>
+</div>	
+		
+		
+		<h2>SEASONAL and SPECIALTY</h2>
+		<p>Pan de Muerto and Rosca De Reyes are some of seasonal breads but we also have Challah for any Shabbat or brit milah. Please be sure to order a week ahead of time to avoid any delays.</p>
+		
+		<div class="row">
+  <div class="column">
+	  <img src="images/Menu/ss1.jpg" onclick="openModal2();currentSlide2(1)" class="hover-shadow"> 
+			</div>
+  <div class="column">
+    <img src="images/Menu/ss2.jpg" onclick="openModal2();currentSlide2(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="images/Menu/ss3.jpg"
+		 onclick="openModal2();currentSlide2(3)" class="hover-shadow">
+  </div>
+
+</div>
+
+
+<div id="myModal2" class="modal">
+  <span class="close cursor" onclick="closeModal2()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides2">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/Menu/ss1.jpg" width="60%"> </div>
+
+    <div class="mySlides2">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/Menu/ss2.jpg" width="60%"> </div>
+
+    <div class="mySlides2">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/Menu/ss3.jpg" width="60%"> </div>
+
+    <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+
+
+	
+  </div>
+</div>	
+
+		
+		<h2>MUFFINS</h2>
+		<p>Our variety of muffins are great for any occassion and perfect for customization to fit your theme. Available in Mini muffins or Regular muffins.</p>
+		<div class="row">
+  <div class="column">
+	  <img src="images/Menu/muffin1.jpg" onclick="openModal3();currentSlide3(1)" class="hover-shadow"> 
+			</div>
+  <div class="column">
+    <img src="images/Menu/muffin2.jpg" onclick="openModal3();currentSlide3(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="images/Menu/muffin3.jpg"
+		 onclick="openModal3();currentSlide3(3)" class="hover-shadow">
+  </div>
+
+</div>
+
+
+<div id="myModal3" class="modal">
+  <span class="close cursor" onclick="closeModal3()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides3">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/Menu/muffin1.jpg" width="60%"> </div>
+
+    <div class="mySlides3">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/Menu/muffin2.jpg" width="60%"> </div>
+
+    <div class="mySlides3">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/Menu/muffin3.jpg" width="60%"> </div>
+
+    <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides3(1)">&#10095;</a>
+
+
+	
+  </div>
+</div>	
+
+		
+		<h2>BREAD</h2>
+		<p>We carry a variety of breads from Bolillos to Baguettes and everything in between. Our amazing bakers are well versed in the language of bread. Stop by for a tasting!</p>
+		
+			<div class="row">
+  <div class="column">
+	  <img src="images/Menu/bread1.jpg" onclick="openModal4();currentSlide4(1)" class="hover-shadow"> 
+			</div>
+  <div class="column">
+    <img src="images/Menu/bread2.jpg" onclick="openModal4();currentSlide4(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="images/Menu/bread3.jpg"
+		 onclick="openModal4();currentSlide4(3)" class="hover-shadow">
+  </div>
+
+</div>
+
+
+<div id="myModal4" class="modal">
+  <span class="close cursor" onclick="closeModal4()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides4">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/Menu/bread1.jpg" width="60%"> </div>
+
+    <div class="mySlides4">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/Menu/bread2.jpg" width="60%"> </div>
+
+    <div class="mySlides4">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/Menu/bread3.jpg" width="60%"> </div>
+
+    <a class="prev" onclick="plusSlides4(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides4(1)">&#10095;</a>
+
+
+	
+  </div>
+</div>		
+		
+		<h2>TARTLETTES</h2>
+		<p>Our tartelettes are made daily and use fresh local produce. The beautiful thing about tartelettes is the variety they come in. Stop by for a free tasting!</p>
+		
+			<div class="row">
+  <div class="column">
+	  <img src="images/Menu/tart1.jpg" onclick="openModal5();currentSlide5(1)" class="hover-shadow"> 
+			</div>
+  <div class="column">
+    <img src="images/Menu/tart2.jpg" onclick="openModal5();currentSlide5(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="images/Menu/tart3.jpg"
+		 onclick="openModal5();currentSlide5(3)" class="hover-shadow">
+  </div>
+
+</div>
+
+
+<div id="myModal5" class="modal">
+  <span class="close cursor" onclick="closeModal5()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides5">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/Menu/tart1.jpg" width="60%"> </div>
+
+    <div class="mySlides5">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/Menu/tart2.jpg" width="60%"> </div>
+
+    <div class="mySlides5">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/Menu/tart3.jpg" width="60%"> </div>
+
+    <a class="prev" onclick="plusSlides5(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides5(1)">&#10095;</a>
+
+
+	
+  </div>
+</div>		
+		
+<!--
+		
+		
+		<div class="icons">
+<div class="card"></div>
+<div class="card1"></div>
+		</div>
+-->
+		
+		
+		</div>
+	</div>
+
+<footer>
+    <img src="images/facebook1.png" width="18" height="auto" alt=""/> 
+	<img src="images/instagram1.png" width="30" height="auto" alt=""/>
+		<h6> 773.391.2683 | Renes@gmail.com</h6>
+		<p>RenesBakeryInc &copy; 2020 Copyright. All rights Reserved. </p>
+	</footer>
+
+</body>
+	
+			<script type="text/javascript">
+			function menuToggle()
+		{
+			var nav = document.getElementById('navbar')
+			nav.classList.toggle('active')
+		}
+</script>
+	
+<script>
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+	</script>
+	
+	
+	
+</html>

@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> ROCO </title>
+<link href="style/index.css" rel="stylesheet" type="text/css">
+<link href="style/greece.css" rel="stylesheet" type="text/css">
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+<script src="http://use.edgefonts.net/neuton-cursive:n4:default.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+<div id="wrapper">
+	
+	<header>
+	    	<div class="logoup"> 
+				<a href="home.html"><img src="images/logo.png"></a>
+			</div>
+			<h4> The Evolution of Rock </h4>
+		
+			<nav><ul>
+				<li class="navup"><a href="china.html" class="cool-link"> China </a></li>
+				<li class="navup"><a href="greece.html" class="cool-link"> Greece </a></li>
+				<li class="navup"><a href="vietnam.html" class="cool-link"> Vietnam </a></li>
+				<li class="navup"><a href="venezuela.html" class="cool-link"> Venezuela </a></li>
+			</ul></nav>
+		</header>
+	
+<div class="slideshow-container">
+ 	<div class="mySlides fade">
+    	<div class="numbertext"> <img src="images/greece.png" width="30" height="40" alt=""/></div>
+    	<img src="images/greece1.jpg" width="100%"> 
+		<!--    <div class="text"> </div>-->
+  	</div>
+
+  	<div class="mySlides fade">
+  	 	<div class="numbertext"> <img src="images/greece.png" width="30" height="40" alt=""/> </div>
+		<img src="images/greece2.jpg" width="100%">
+		<!--    <div class="text"> </div>-->
+  	</div>
+
+  	<div class="mySlides fade">
+    	<div class="numbertext"> <img src="images/greece.png" width="30" height="40" alt=""/> </div>
+    	<img src="images/greece3.jpg" width="100%">
+		<!--    <div class="text"> </div>-->
+  	</div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+	
+	
+	<div id="text">
+		<h2 class="focus-in-expand"> Kleftiko Milos </h2>
+		<p>In the southwest corner of Milos you will find Kleftiko, a cluster of impressive volcanic white rocks in the turquoise waters of the Aegean. It is also known as “Meteora of the sea”. </p>
+		<p>Kleftiko is a complex of impressive volcanic white rocks, created by the waves of the sea and the air, in the turquoise waters of the Aegean Sea. Its photographs adorn the most tourist guides that advertise Greece and have become the trademark of Milos.</p>
+		<p>The shape of Milos island looks like a horse shoe. The most characteristic geological feature of Milos is its volcanic background. In fact, the island was created about 2-3- million years ago by volcanic eruptions. These eruptions ended at about 90,000 years ago, leaving two inactive craters today on the surface of Milos island. This volcanic activity shaped the rocky coastline of the island and created valuable rocks. In fact, mining has been an important activity in Milos from the antiquity until today.</p>
+	</div>
+
+		<footer> 
+			<p> &copy; Roco 2020</p>
+			<div id="icons">
+				<ul id="sci">
+					<li><a href="#"><img src="images/facebook.png"></a></li>
+					<li><a href="#"><img src="images/twitter.png"></a></li>
+					<li><a href="#"><img src="images/instagram.png"></a></li>
+				</ul>
+			</div>
+		</footer>
+	
+	</div>
+	
+	<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+	
+</body>
+</html>

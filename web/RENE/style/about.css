@@ -1,0 +1,360 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#wrapper
+{
+	max-width: 1200px;
+	padding-top: 7.5em;
+}
+
+.top
+{
+	width:100%;
+	background-color: #fffff1;
+}
+.top p
+{
+	color: #4a507b;
+	font-size: 2em;
+	padding: 1em 0 0;
+}
+.top img
+{
+	margin: 0;
+}
+.midpart
+{
+	width: 100%;
+	background-color: #4a507b;
+/*	margin-top: 2em;*/
+	height: 35em;
+}
+.midpart figure
+{
+	float: left;
+	width: 35%;
+	padding-left: 4em;
+}
+.midpart figure img
+{
+	width: 100%;
+	padding: 5em 0;
+}
+.about
+{
+	width: 40%;
+/*	height: 10em;*/
+	padding-right: 10%;
+	float: right;
+	padding-top: 5%
+}
+.midpart h3
+{
+	font-size: 3em;
+	color: #fffff1;
+}
+.midpart p
+{
+	text-align: justify;
+	padding: .2em 0; 
+	color: #fffde1;
+	font-size: 1em;
+}
+.team
+{
+	width: 100%;
+	color: #4a507b;
+	background-color: #fffff1;
+}
+.team h5
+{
+	font-size: 3em;
+	padding: .6em 0;
+	font-weight: 900;
+	
+}
+.team p
+{
+	width: 60%;
+	padding-bottom: 2em; 
+}
+.container
+{
+/*	width: 1000px;*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-bottom: 3em;
+}
+.box
+{
+	position: relative;
+	width: 28%;
+	height: 400px;
+	background: #000;
+	box-shadow: 0 30px 30px reba(0,0,0,.5);
+	margin: 2em 1em;
+}
+.box .imgBx
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.box .imgBx img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: 0.5s;
+}
+.box:hover .imgBx img
+{
+	opacity: 1;
+}
+.box .content
+{
+	position: absolute;
+	bottom: 20px;
+	left: 10%;
+	width: 80%;
+	height: 60px;
+	background: #fffff1;
+	transition: 0.5s;
+	overflow: hidden;
+	padding: 15px;
+	box-sizing: border-box;
+	border-radius: .5em;
+}
+.box:hover .content
+{
+	width: 100%;
+	height: 100%;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(255,255,241, .8);
+	border-radius: 0em;
+
+}
+.box .content h3
+{
+	margin: 0;
+	padding: 0;
+	font-size: 1.3em;
+}
+.box .content p
+{
+	margin: 1em 0 0;
+	padding: 0;
+	opacity: 0;
+	line-height: 1.2em;
+	transition: 0.5s;
+	text-align: left;
+	font-size: 1em;
+	width: 100%;
+}
+.box:hover .content p
+{
+	opacity: 1;
+	transition-delay: 0.5s;
+}
+
+
+@media (max-width: 780px){
+	.top p
+	{
+		font-size: 2em;
+	}
+	.top img
+	{
+		margin: 0;
+		width: 20%;
+	}
+	.midpart
+	{
+		height: 25em;
+	}
+
+	.about
+	{
+		padding-top: 10%;
+	}
+	.midpart h3
+	{
+		font-size: 2em;
+		color: #fffff1;
+	}
+	.midpart p
+	{
+		padding: .5em 0; 
+		letter-spacing: 1px;
+		text-align: left;
+
+	}
+	.team h5
+	{
+		padding-top: 1em;
+	}
+		.team p
+	{
+		width: 80%;
+	}
+	.box
+	{
+		width: 40%
+	}
+}
+@media (max-width: 480px){
+	.top p
+	{
+		font-size: 1.5em;
+		margin: 0;
+		padding: 0;
+	}
+	.top img
+	{
+		margin: 0;
+		width: 20%;
+	}
+	.midpart
+	{
+		height: 35em;
+		clear: both;
+	}
+	.midpart figure
+	{
+		clear: both;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.midpart figure img
+	{
+		width: 70%;
+		margin: 0;
+		padding: 1em 0 0;
+	}
+
+	.about
+	{
+		padding: 0;
+		clear: both;
+		width: 100%;
+		margin-top: -2.2em
+	}
+	.midpart h3
+	{
+		font-size: 2em;
+	}
+	.midpart p
+	{
+		padding: .8em 0em; 
+		letter-spacing: 1px;
+		text-align: left;
+		width: 90%;
+
+	}
+	.team h5
+	{
+		padding: 1em 0 .5em;
+		font-size: 2em
+	}
+	.team p
+	{
+		width: 90%;
+		font-size: .8em;
+		padding: 0;
+	}
+.box
+{
+	position: relative;
+	width: 60%;
+	height: 400px;
+	background: #000;
+	box-shadow: 0 30px 30px reba(0,0,0,.5);
+	margin: 2em 0em 2em 6em;
+}
+.box .imgBx
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.box .imgBx img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: ;
+	transition: 0.5s;
+}
+.box:hover .imgBx img
+{
+	opacity: 1;
+}
+.box .content
+{
+	position: absolute;
+	bottom: 20px;
+	left: 10%;
+	width: 80%;
+	height: 60px;
+	background: #fffff1;
+	transition: 0.5s;
+	overflow: hidden;
+	padding: 15px;
+	box-sizing: border-box;
+	border-radius: .5em;
+}
+.box:hover .content
+{
+	width: 100%;
+	height: 100%;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(255,255,241, .8);
+	border-radius: 0em;
+
+}
+.box .content h3
+{
+	margin: 0;
+	padding: 0;
+	font-size: 1.3em;
+}
+.box .content p
+{
+	margin: 1em 0 0;
+	padding: 0;
+	opacity: 0;
+	line-height: 1.2em;
+	transition: 0.5s;
+	text-align: left;
+	font-size: 1em;
+	width: 100%;
+}
+.box:hover .content p
+{
+	opacity: 1;
+	transition-delay: 0.5s;
+}
+}
+
+
+
+
+
+
+
+
+
+

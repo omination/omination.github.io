@@ -1,0 +1,154 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+body{
+	width: cover;
+	hight: auto;
+	text-shadow: 0px 0px;
+}
+
+header{
+	width: 1280px;
+	height: 300px;
+	background-image: url("../image/header.png");
+	background-repeat: no-repeat;
+	position: relative;
+ } 
+
+
+header img{
+	display: inline-block;
+	left: 25px;
+	position: relative;
+}
+
+header img:hover{
+	background-image: url("../image/logo4.png")
+}
+
+nav{
+	display: inline-block;
+	position: absolute;
+}
+
+nav ul{
+	display: inline-block;
+	margin-left: 65px;
+	margin-top: 30px;
+}
+
+nav ul li{
+	display: inline;
+	color: #E96B98;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 28px;
+	margin-right: 52px;
+	text-shadow: 0 3px 0px #FBF2F2;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #E96B98;
+}
+
+nav li a:hover{
+	color: #FFFFFF;
+	text-shadow: 2px 1px #000000;
+}
+
+#wrapper {
+	background-image: url("../image/bg.jpg");
+	width: 1280px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0;
+	position: relative;
+}
+main{
+	text-align: center;
+	margin-top: 0;
+	background-color: #EBB969;
+	width: 1150px;
+	height: 750px;
+	margin: auto;
+	border-radius: 50px;
+}
+
+h1{
+	font-family: chewy;
+	font-size: 70px;
+	color: #FFFFFF;
+	padding-top: 10px;
+	letter-spacing: 6px;
+	text-shadow: 2px 1px #010101;
+	margin-top: 0;
+	margin-bottom: 0;
+
+}
+figure img{
+	border: 5px ridge #9DEC8E;
+	-webkit-box-shadow: 10px 10px 30px #000000;
+	box-shadow: 10px 10px 30px #000000;
+}
+
+#bot{
+	width: 1150px;
+	height: 400px;
+}
+.mapouter{
+	margin-left: 65px;
+	border: 5px ridge #9DEC8E;
+	float: left;
+	-webkit-box-shadow: 10px 10px 30px #000000;
+	box-shadow: 10px 10px 30px #000000;
+}
+
+#hrs{
+	background-color: #EBB969;
+	border-radius: 50px;
+	width: 350px;
+	height: 360px;
+	margin-left: 870px;
+	margin-top: 40px;
+}
+
+h2{
+	color: #E96B98;
+	letter-spacing: 6px;
+	text-decoration-line: underline;
+	text-decoration-color: white;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 32px;
+}
+p{
+	text-align: left;
+	color: #FFFFFF;
+	font-weight: normal;
+	letter-spacing: 1px;
+	margin-top: auto;
+	margin-bottom: 0px;
+	font-size: 18px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+}
+
+
+footer{
+	background-color: #E96B98;
+	height: 40px;
+	 
+}
+h5 {
+	color: #FFFFFF;
+	font-size: 18px;
+	letter-spacing: 1px;
+	font-family: abel;
+	font-style: normal;
+	font-weight: 400;
+	padding-top: 10px;
+	padding-left: 20px;
+}

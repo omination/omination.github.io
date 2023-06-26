@@ -1,0 +1,244 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#wrapper
+{
+	max-width: 1200px;
+	padding-top: 7.5em;
+}
+.top
+{
+	background-color: #fffff1;
+	width: 100%;
+}
+.top h3
+{
+	color: #4a507b;
+	font-size: 2em;
+	padding: 1em 0 0;
+}
+.top p
+{
+	color:  #4a507b;
+	font-size: 1.3em;
+}
+.top img
+{
+	margin: 1.5em 0;
+}
+.midpart
+{
+	width:100%;
+	background: #4a507b;
+}
+.midpart p
+{
+	padding: 2em 0;
+	color: #fffff1;
+}
+.row
+{
+	column-count: 2;
+}
+input[type=text], input[type=time], input[type=date]{
+	width: 80%;
+	padding: 12px;
+	border: 2px solid #ffcdc4;
+	border-radius: 4px;
+	box-sizing: border-box;
+	resize: vertical;
+	text-align: left;
+	margin: .5em 0;
+	background-color: #fffff1;
+}
+
+.row2
+{
+	column-count: 2;
+	margin-top: 3em;
+	color: #ffcdc4;
+}
+select
+{
+	width: 80%;
+	border: 2px solid #ffcdc4;
+	height: 3em;
+	background-color: #fffff1;
+}
+.col-25 {
+  	width: 80%;
+	color: #ffcdc4;
+	font-weight: 800;
+	text-align: left;
+	padding-top: 1.5em;
+}
+
+
+.container1 
+{
+    width: 100%;
+    margin: 1em 0;
+}
+.container1 h1
+{
+	color: #ffcdc4;
+	font-weight: 800;
+	padding-top: 1.5em;
+	margin: .5em;
+}
+.avatar-upload
+{
+	border: 4px solid #ffcdc4;
+	width: 80%;
+	padding: 6em 0;
+	border-radius: 4px;
+	background: #fffff1;
+}
+
+.row3
+{
+	width: 100%;
+	
+}
+.row3 h1
+{
+	color: #ffcdc4;
+	font-weight: 800;
+	margin: .5em;
+	
+}
+textarea
+{
+	width: 80%;
+	padding: .5em 0 0 .5em;
+	border: 4px solid #ffcdc4;
+	border-radius: 4px;
+	box-sizing: border-box;
+	resize: vertical;
+	text-align: left;
+	font-size: 1.5em;
+	background: #fffff1;
+}
+.row4
+{
+	width: 80%;
+	height: 7em;
+/*	text-align: left;*/
+}
+input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 1.5em;
+	margin: 1em 0;
+}
+.policy
+{
+	width: 100%;
+	background-color: #ffcdc4;
+	padding: 3em 0; 
+	color: #4a507b;
+}
+.policy h2
+{
+	font-weight: 900;
+	font-size: 2em;
+}
+.policy p
+{
+	width: 80%;
+	padding: 1em;
+}
+
+.midpart figure
+{
+	width: 100%;
+}
+.midpart figure img
+{
+	width: 25%;
+	padding: 2em 1em;
+}
+
+
+@media (max-width: 780px){
+	.top img
+	{
+		width: 20%
+	}
+}
+
+@media (max-width: 480px){
+	.top h3
+	{
+		font-size: 2em;
+		padding: 0;
+	}
+	.top p
+	{
+		color:  #4a507b;
+		font-size: 1.3em;
+	}
+	.top img
+	{
+		margin: .5em 0;
+	}
+	.midpart p
+	{
+		font-size: .8em;
+		width: 80%;
+		padding: 1.5em 0;
+	}
+	.col-25
+	{
+		font-size: .8em;
+		width: 80%;
+		padding-bottom: .5em
+	}
+	.container1 h1
+	{
+		font-size: 1em
+	}
+	.avatar-upload
+	{
+		padding: 4em 0;
+	}
+
+	.row3 h1
+	{
+		font-size: 1em
+	}
+	textarea
+	{
+		font-size: .8em;
+	}
+	.policy p
+	{
+		font-size: .8em;
+		width: 90%;
+		letter-spacing: 1px
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
