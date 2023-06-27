@@ -1,0 +1,207 @@
+@charset "utf-8";
+/* CSS Document */
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 50vh;
+}
+section
+{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(#ffeb3b, #e91e63);
+}
+header
+{
+	width: 100%;
+	background: #ffcdc4;
+	position: fixed;
+	z-index: 10;
+}
+header ul 
+{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: rgba(255, 205, 196, .7);
+	z-index: 1;
+	padding: 100px 0;
+}
+header.active ul
+{
+	display: initial;
+}
+header ul li
+{
+	padding: 3em 0 0 4em;
+	text-align: left;
+}
+header ul li a
+{
+	color: #4a507b; 
+	font-size: 3em;
+	text-decoration: none;
+	position: relative;
+	padding: .5em;
+	font-weight: 700;
+}
+header ul li a::before
+{
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background:  #4a507b;
+	z-index: -1;
+	transition: 0.5s ease-in-out;
+	border-radius: .5em;
+}
+header ul li a:hover::before,
+header ul li a.active::before
+{
+	width: 100%;
+}
+header ul li a:hover,
+header ul li a.active
+{
+	color: #ffcdc4;
+}
+.menuIcon
+{
+	display: initial;
+	position: fixed;
+	right: 2em;
+	top: 3em;
+	cursor: pointer;
+	padding: 8px;
+	z-index: 10;
+	background: url("../images/toggle.png");
+	width: 3em;
+	height: 3em;
+	background-repeat: no-repeat;
+	background-position: 6px;
+}
+header.active .menuIcon
+{
+	background:url("../images/x.png");
+	background-repeat: no-repeat;
+	background-position: 6px;
+}
+
+section .toggle
+{
+	position: absolute;
+	top: 10px;
+	right: 20px;
+}
+section h2
+{
+	position: relative;
+	text-align: center;
+	font-size: 100px;
+	color: #fff;
+	text-shadow: 0 5px 10px rgba(0,0 , 0,0.2)
+}
+section h2 span
+{
+	font-size: 30px;
+}
+section h2::before
+{
+	content: '';
+	position: absolute;
+	top: -44px;
+	left:  -100px;
+	width: 200px;
+	height: 200px;
+	background: transparent;
+	border-left: 15px solid #fff;
+	border-radius: 50%;
+	transform: rotate(-30deg);
+	
+}
+.mosque
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 200px;
+	background: url("../images/Asset-3.png");
+	background-repeat: repeat-x;
+	background-size: 1200px;
+	z-index: 1;
+	pointer-events: none;
+	animation: animate 20s linear infinite;
+}
+@keyframes animate
+{
+	0%{
+		background-position: 0px;
+	}
+	100%{
+		background-position: 1200px;
+	}
+}
+
+.mosque::before
+{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 600px;
+	background: url("../images/Asset-2.png");
+	background-repeat: repeat-x;
+	background-size: 1600px;
+	z-index: 1;
+	pointer-events: none;
+	opacity: 0.1;
+	animation: animateReverse 40s linear infinite;
+}
+@keyframes animateReverse
+{
+	0%{
+		background-position: 1600px;
+	}
+	100%{
+		background-position: 0px;
+	}
+}
+.particles-js-canvas-el
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	
+}
+
+
+
+
+
+
+
+
+
+
